@@ -1,17 +1,14 @@
 package dev.com.alex.spring_data_jpa.model;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
-@Entity(name = "tb_user")
+@Entity()
+@Table(name = "tb_user")
 @Getter @Setter @ToString @AllArgsConstructor @NoArgsConstructor
 public class User {
     @Id
